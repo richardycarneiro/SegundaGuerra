@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+a:hover {
+   opacity: 0.7;
+}
+
+.logo {
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 0px;  
+}
+
+nav {
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: "EB Garamond", Arial, sans-serif;
+   background-image: url("Img/Fundos/pianista3.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 170px;
+}
+
+ul a {
+   font-size: 25px;
+}
+
+.nav-list {
+   list-style: none;
+}
+
+.mobile-menu {
+   display: none;
+   cursor: pointer;
+}
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+   transition: 0.3s;
+}
+
+@media (min-width: 999px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-list li {
+        padding: 20px;
+    }
+    p {
+        
+        padding: 60px;
+        font-size: 50px;
+    }
+    .elemento-pai img {
+     max-width: 100%;
+     max-height: 100%;
+     
+}
+   
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+    display: inline-block;
+  }
+  .nav-list {
+    
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }  
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+body {
+    background-color: black;    
+    color: white;
+    font-family: "Roboto Slab", Arial, sans-serif;
+}
+
+mark {
+   
+    color: whitesmoke;
+    
+} 
+
+p {
+  text-align: justify;
+  margin: 15px;
+  
+}
+
+.elemento-pai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elemento-pai img {
+  max-width: 93%;
+  max-height: 93%;
+  border: 3px solid #000;
+  border-radius: 35px;
+}
+
+h1 {
+    
+    color: #bb6162;
+    font-family: "EB Garamond", Arial, sans-serif;
+    font-weight: normal;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-family: "EB Garamond", Arial, sans-serif;
+  }
+  
+</style>
+		<link rel="stylesheet" href="CSS/reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<title>Curiosidades</title>
+</head>
+<header> 
+   <nav>
+        <a class="logo" href="Ww2.html">ceu</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="Ww2.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Curiosidades.html">Curiosidades</a></li>
+          <li><a href="Contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+</header>
+<body>
+    <script src="JAVA/mobile-navbar.js"></script>
+    
+<div class="texto">
+<h1>1. A Emocionante História Real de um Sobrevivente do Holocausto</h1>
+
+<p>"O Pianista", dirigido por Roman Polanski, é um filme de drama baseado em uma história real que retrata a vida de Władysław Szpilman, um pianista polonês, durante a Segunda Guerra Mundial. Inspirado nas memórias de Szpilman, o filme é conhecido por sua representação realista e emocionalmente impactante dos eventos históricos vividos pelo protagonista.</p>
+</div>
+ 
+ <div class="elemento-pai">
+   <img src="Img/Curiosity/pia.jpg" alt="Szpilman">
+</div>
+
+<p style="font-size: 16px; display: inline-block; ">Comparação entre o retrato do ator (à direita) e a imagem do verdadeiro Władysław Szpilman (à esquerda).
+</p>
+
+<p>A história se passa durante a ocupação nazista em Varsóvia, onde Szpilman luta para sobreviver em meio ao Holocausto, enfrentando inúmeras adversidades. O filme apresenta uma narrativa comovente e autêntica, destacando a resiliência e coragem de Szpilman em face da extrema adversidade.</p>
+
+<p>Adrien Brody oferece uma atuação premiada como Szpilman, conquistando o Oscar de Melhor Ator por seu poderoso desempenho. A produção do filme também se destaca pela atenção meticulosa aos detalhes na recriação dos eventos históricos, incluindo a utilização de locais reais em Varsóvia durante as filmagens, o que confere ao filme uma veracidade impressionante.</p>
+
+<p>Além de sua representação emocionalmente impactante, "O Pianista" também é elogiado por sua trilha sonora, com composições de Chopin, um dos compositores favoritos de Szpilman, que adiciona uma dimensão adicional à história.</p>
+
+<p>"O Pianista" é uma obra cinematográfica poderosa que destaca a história real de um sobrevivente do Holocausto e a força do espírito humano em tempos de guerra, proporcionando uma experiência comovente e memorável para os espectadores.</p>
+
+<h1>2. Judy: A Notável Cachorrinha da Segunda Guerra Mundial que se Tornou uma Inspiradora História de Sobrevivência</h1>
+<p>Durante a Segunda Guerra Mundial, uma história notável de sobrevivência e coragem envolveu uma cachorrinha chamada Judy. Judy era uma pastor-alemão que foi adotada por soldados britânicos e se tornou uma figura icônica durante o conflito.</p>
+<div class="elemento-pai">
+   <img src="Img/Curiosity/judy.jpg" alt="judy">
+</div>
+<p>Judy foi encontrada por marinheiros britânicos em um porto em Xangai, na China, em 1936. Ela foi levada a bordo do HMS Gnat e logo se tornou a mascote do navio. Quando a guerra estourou em 1939, o HMS Gnat estava em serviço no Pacífico Sul, e Judy acompanhou a tripulação em suas missões perigosas.</p>
+<p>Judy demonstrou uma incrível coragem em várias ocasiões durante a guerra. Ela sobreviveu a um naufrágio quando o navio em que estava foi afundado por um submarino japonês. Nadando por horas em águas infestadas de tubarões, Judy chegou a uma ilha deserta e, junto com os sobreviventes do naufrágio, sobreviveu bebendo água de coco e caçando comida.</p>
+<div class="elemento-pai">
+   <img src="Img/Curiosity/judy0.jpg" alt="judy0">
+</div>
+<p>Posteriormente, Judy foi capturada pelos japoneses e passou três anos em campos de prisioneiros de guerra. Durante esse período, ela se tornou uma fonte de esperança e conforto para os prisioneiros, ajudando-os a enfrentar as dificuldades da vida em cativeiro.</p>
+<p>Judy também foi creditada com a salvação de vidas devido à sua aguda audição e olfato apurado. Ela foi capaz de detectar a presença de aeronaves inimigas e avisar os prisioneiros e seus guardas sobre possíveis ataques aéreos.</p>
+<p>Após a guerra, Judy foi repatriada para o Reino Unido, onde recebeu diversas honras por sua coragem e serviço. Ela viveu o resto de sua vida com seu cuidador, o marinheiro Frank Williams, que a adotou como sua fiel companheira. Judy faleceu em 1950, mas sua história inspiradora de coragem, lealdade e sobrevivência continua sendo lembrada até hoje.</p>
+<p>A história de Judy é uma prova do incrível vínculo que pode se formar entre os humanos e os animais, mesmo em tempos de guerra. Sua bravura e dedicação são um testemunho da resiliência do espírito humano e um exemplo inspirador de como os animais podem desempenhar um papel importante em momentos de adversidade.</p>
+
+<h1 style="font-size: 37px;">3. Além do Tempo: A Incrível Jornada de Onoda Hiroo, Que Acreditava que a Guerra Ainda Não Havia Terminado
+</h1>
+
+<p>Hiroo Onoda foi um ex-soldado japonês que se rendeu em 1974, muito tempo após o fim da Segunda Guerra Mundial. Sua história é fascinante e única, mostrando sua incrível determinação e devoção ao cumprimento do dever militar.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Curiosity/hiroo.jpg" alt="HirooOnoda">
+</div>
+
+<p>No início de dezembro de 1944, Hiroo Onoda foi enviado para a ilha de Lubang, nas Filipinas, como tenente do Exército Imperial Japonês, com a missão de conduzir operações de guerrilha contra as forças inimigas. No entanto, a guerra acabou em 1945, e as tropas japonesas receberam ordens para se renderem. Mas Onoda e outros três soldados japoneses se recusaram a acreditar que a guerra havia acabado, já que não haviam recebido ordens oficiais de seus superiores.</p>
+<p>Durante 29 anos, Hiroo Onoda e seu grupo viveram escondidos na densa selva filipina, continuando sua missão de lutar contra o inimigo. Eles sobreviveram comendo frutas, arroz e carne de animais selvagens, além de roubar suprimentos de fazendas locais. Eles também realizaram ataques contra a população local, o que causou problemas e medo nas áreas próximas.</p>
+<p>Somente em 1974, quando o ex-comandante de Onoda foi localizado e enviado à ilha para oficialmente ordenar sua rendição, é que ele finalmente aceitou a derrota e depôs suas armas, tornando-se o último soldado japonês a se render após a Segunda Guerra Mundial.</p>
+<p>Após sua rendição, Hiroo Onoda retornou ao Japão e recebeu um heróico acolhimento, embora também tenha enfrentado críticas por suas ações durante os anos em que continuou lutando na selva filipina. Ele passou a escrever um <a href="https://historiamilitaremdebate.com.br/livro-sem-rendicao-de-hiroo-onoda/" style="color: #bb6162;">livro</a> sobre sua experiência e a dedicar-se a trabalhos agrícolas e de caridade, buscando uma nova vida após a guerra.</p>
+<p>A história de Hiroo Onoda é um testemunho notável do poder do dever, da crença e da resistência humana em face de adversidades incríveis. Sua coragem e determinação em continuar lutando mesmo após décadas de isolamento na selva são exemplos inspiradores de devoção à causa e lealdade militar.</p>
+
+<h1>4. Inacreditável e Perturbador: Os Cães Explosivos do Nazismo na Segunda Guerra Mundial.
+</h1>
+
+<p>Na Segunda Guerra Mundial, os nazistas levaram sua crueldade a outro nível, usando cães como verdadeiras bombas ambulantes! Sim, você leu certo, os "gênios" do regime nazista criaram a "Unidade de Combate Canino", treinando cães para carregarem explosivos em suas costas e serem usados contra tanques e inimigos. Como se não bastasse a insanidade do nazismo, eles literalmente transformaram cães em bombas vivas!</p>
+
+<div class="elemento-pai">
+   <img src="Img/Curiosity/caob.jpg" alt="cães bomba">
+</div>
+
+<p>Não satisfeitos em propagar ódio e intolerância entre os seres humanos, os nazistas foram além e também exploraram a crueldade contra animais inocentes. Imagine a cena: um pobre cãozinho sendo amarrado a um tanque, apenas para ser detonado junto com o veículo, causando a morte do animal e danos materiais e humanos. É difícil acreditar que alguém pudesse chegar a tal nível de barbaridade!</p>
+<div class="elemento-pai">
+   <img src="Img/Curiosity/caob2.jpg" alt="cães bomba">
+</div>
+<p>Mas, felizmente, a "genialidade" dos nazistas não foi tão eficaz assim em termos militares. Essa tática absurda foi condenada por muitos, inclusive por militares alemães que a consideravam inaceitável. Afinal, é realmente ridículo pensar que o destino do mundo poderia ter sido decidido por cães kamikazes! Parece até piada de mau gosto, mas infelizmente foi uma triste realidade.</p>
+<p>Em resumo, o uso de cães como explosivos na Segunda Guerra Mundial é mais uma prova da insanidade e monstruosidade do nazismo. É uma lembrança bizarra de como a guerra pode levar a ações cruéis e inacreditáveis, mesmo em relação a animais inocentes. É importante condenar e repudiar veementemente essa aberração histórica, para que nunca mais se repita uma atrocidade tão absurda e repugnante!</p>
+
+<h1>5. Transformando Soldados em Super-Homens: O Uso de Esteróides na Guerra</h1>
+<p>Durante a Segunda Guerra Mundial, algumas nações exploraram o uso de esteróides como uma forma de transformar seus soldados em verdadeiros super-heróis, com aumento de desempenho físico e resistência. A prática, conhecida como "Metanfetamina de Combate", foi utilizada principalmente pelo exército alemão como uma forma de manter os soldados acordados e alerta por longos períodos de tempo.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Curiosity/meta.jpg" alt="Metanfetamina">
+</div>
+
+<p>O uso de esteróides na guerra tinha como objetivo melhorar a capacidade de combate das tropas, aumentando sua resistência, reduzindo a fadiga e melhorando o estado de alerta. Soldados que consumiam esteróides podiam marchar por longas distâncias, realizar tarefas extenuantes e até mesmo suportar extremas condições climáticas com mais facilidade.</p>
+<p>No entanto, o uso de esteróides na guerra também tinha efeitos colaterais perigosos. Os soldados que consumiam essas substâncias podiam experimentar efeitos psicológicos adversos, como agitação, irritabilidade, paranoia e até mesmo psicose. Além disso, o uso prolongado de esteróides também causava efeitos físicos nocivos, incluindo danos ao sistema cardiovascular, problemas de saúde mental e dependência química.</p>
+<div class="elemento-pai">
+   <img src="Img/Curiosity/meta2.jpg" alt="Metanfetamina">
+</div>
+<p>O uso de esteróides na guerra foi uma prática controversa e, após a Segunda Guerra Mundial, foi amplamente abandonado devido aos riscos associados. No entanto, a história do uso de esteróides na guerra é um lembrete sombrio dos extremos a que as nações chegaram em busca de vantagem militar durante tempos de conflito.</p>
+
+</body>
+<footer>
+    &copy; 2023 CEU. Todos os direitos reservados.
+</footer>
+</html>

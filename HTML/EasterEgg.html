@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="CSS/reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<title>Easter Egg</title>
+<style>
+ * {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+a:hover {
+   opacity: 0.7;
+}
+
+.logo {
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 0px;  
+}
+
+@media (min-width: 999px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-list li {
+        padding: 20px;
+    }
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: "EB Garamond", Arial, sans-serif;
+   background-image: url("Img/Fundos/fifi.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 170px;
+}
+
+ul a {
+   font-size: 25px;
+}
+
+.nav-list {
+   list-style: none;
+}
+
+.mobile-menu {
+   display: none;
+   cursor: pointer;
+}
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+   transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+body { 
+
+    font-size: 20px;
+    background-color: black;
+    color: white; 
+   
+ }
+
+p {    
+    font-family: "Roboto Slab", Arial, sans-serif; 
+    text-align: left;
+    display: inline-block;; 
+}
+
+
+.destaque {
+    color: #87ceeb;
+    font-family: "Roboto Slab", Arial, sans-serif;
+    text-align: justify;
+    margin: 15px;
+}
+
+mark {   
+    background-color: #e1e1e1;
+    color: black;
+}
+    
+h1 {
+
+    text-align: left;
+    display: inline-block;
+    color: #bb6162;
+    font-family: "EB Garamond", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.elemento-pai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elemento-pai img {
+  max-width: 93%;
+  max-height: 93%;
+  border: 3px solid #000;
+  border-radius: 35px;
+}
+
+footer {
+    background-image:  url("Img/Fundos/fifi2.png");
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-family: "EB Garamond", Arial, sans-serif;
+  }
+</style>
+</head>
+<header>
+   <nav>
+        <a class="logo" href="Ww2.html">ceu</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="Ww2.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Curiosidades.html">Curiosidades</a></li>
+          <li><a href="Contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+</header>
+<body>
+    
+   <script src="JAVA/mobile-navbar.js"></script>
+     
+   <h1>Parabéns por encontrar o Easter egg!</h1>
+   <p style="margin: 25px;">Este é um tributo carinhoso à minha cachorrinha que fez parte da minha vida. Aqui, compartilho memórias especiais e honro o seu legado de amor e felicidade em nossas vidas juntos.</p>
+   
+   <div class="elemento-pai">
+   <img src="Img/EasterEgg/fifi.jpeg" alt="Minha cachorrinha fifi">
+   </div>
+  
+   <p class="destaque"><i>A partida da minha querida e corajosa soldada, Fifi, foi uma perda imensurável para mim. Sinto profundamente sua falta e o vazio que ela deixou. Ela foi minha mais adorável e leal companheira, sempre pronta para enfrentar os desafios ao meu lado, com sua coragem inabalável e dedicação exemplar. Vou lembrar dela com muito carinho, como a doce e valente soldada que sempre foi.</i></p>
+
+<p class="destaque"><i>Nunca vou esquecer dos momentos incríveis de bravura que compartilhamos juntos, Fifi. Sua memória será para sempre especial em meu coração. Descanse em paz, minha valente guerreira. Seu legado continuará vivo na memória de todos que tiveram o privilégio de conhecê-la. Você foi realmente especial e deixou uma marca inesquecível em nossas vidas. Obrigada por todo o amor e dedicação que você trouxe. Sentirei sua falta para sempre.</i></p>
+
+<footer>
+     &copy; 2023 Meu Site. Todos os direitos reservados.
+</footer>
+</html>
+    

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="CSS/reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+		<style>
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+a:hover {
+   opacity: 0.7;
+}
+
+.logo {
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 0px;  
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: "EB Garamond", Arial, sans-serif;
+   background-image: url("Img/Fundos/nowar3.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 170px;
+}
+
+ul a {
+   font-size: 25px;
+}
+
+.nav-list {
+   list-style: none;
+}
+
+.mobile-menu {
+   display: none;
+   cursor: pointer;
+}
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+   transition: 0.3s;
+}
+
+@media (min-width: 999px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-list li {
+        padding: 20px;
+    }
+    p {
+        
+        padding: 150px;
+    }
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+body {
+
+    background-color: black;
+    color: white;
+}
+
+
+ footer img {
+  width: 32%;
+  height: auto; /* mantém as proporções da imagem */
+  margin: 0 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+p {
+    text-align: justify;
+    margin: 15px;
+    display: inline-block;    
+    color: #f7f5e6;
+}      
+
+
+.EasterEgg a {
+
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ 
+ .elemento-pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento-pai img {
+    max-width: 98%;
+    max-height: 98%;
+}
+
+ </style>
+ 
+<title>Contatos</title>
+</head>
+<header> 
+   <nav>
+        <a class="logo" href="Ww2.html">ceu</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="Ww2.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Curiosidades.html">Curiosidades</a></li>
+          <li><a href="Contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+</header>
+<body>
+    <script src="JAVA/mobile-navbar.js"></script>
+    
+    <div class="EasterEgg">
+    <a href="EasterEgg.html" > -----------------------------------------------------------------------------------</a>
+    
+     <div class="elemento-pai">
+     <img src="Img/geral/ceu.jpg" alt="Foto de perfil">
+    </div>
+    <div class="elemento-pai">
+     <img src="Img/geral/ceu2.png" alt="Foto de perfil">
+    </div>
+    <div class="elemento-pai" style="padding: 20px">
+     <img src="Img/geral/ceu3.png" alt="Foto de perfil">
+    </div>    
+
+	</body>
+	<footer>
+	    
+	    <a href="https://instagram.com/horizontexd?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer">
+        <img src="Img/svg/Instagram.png"></img>
+      </a>
+	    <a href="https://www.tiktok.com/@horizontexd?_t=8boxoUivERC&_r=1" target="_blank" rel="noopener noreferrer">
+     <img src="Img/svg/tiktok.png"></img>
+     </a>
+     <a href="https://www.youtube.com/@horizontexd" target="_blank" rel="noopener noreferrer">
+      <img src="Img/svg/YouTube.png"></img>
+      </a>
+	    
+	</footer>
+	</html>
+

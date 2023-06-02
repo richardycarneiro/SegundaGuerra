@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="CSS/reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<title>Segunda Guerra Mundial</title>
+</head>
+		<style>    
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+a:hover {
+   opacity: 0.7;
+}
+
+.logo {
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 0px;  
+}
+
+@media (min-width: 999px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-list li {
+        padding: 20px;
+    }
+}
+
+nav {
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: "EB Garamond", Arial, sans-serif;
+   background-image: url("Img/Fundos/nowar1.jpg");
+   background-color: rgba(0,0,0,0.5);
+   background-blend-mode: multiply;   
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 170px;
+}
+
+ul a {
+   font-size: 25px;
+}
+
+.nav-list {
+   list-style: none;
+}
+
+.mobile-menu {
+   display: none;
+   cursor: pointer;
+}
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+   transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body { 
+
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+p {    
+    font-family: "Roboto Slab", Arial, sans-serif; 
+    margin: 15px;
+    text-align: justify;
+}
+
+.destaque {
+    color: #871034;
+    font-family: "Roboto Slab", Arial, sans-serif;
+ 
+}
+
+mark {   
+    background-color: #e1e1e1;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-family: "EB Garamond", Arial, sans-serif;
+  }
+    
+h2, h1 {
+
+    text-align: left;
+    display: inline-block;
+    color: #bb6162;
+    font-family: "EB Garamond", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.destaque0 {
+    color: #cb7169;
+    font-family: "Roboto Slab", Arial, sans-serif;
+    
+}
+
+.elemento-pai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elemento-pai img {
+  max-width: 93%;
+  max-height: 93%;
+  border: 3px solid #000;
+  border-radius: 35px;
+}
+
+h3 {
+    color: #cb7169; 
+    font-family: "EB Garamond", Arial, sans-serif;
+    font-weight: normal;
+    margin: 24px;
+    color: #3e77b6;
+    text-align: justify;
+    
+}
+
+.is p {
+    text-align: left;
+}
+
+.slider {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+.slider img {
+    
+    max-width: 93%;
+    max-height: 93%;
+    border: 3px solid #000;
+    border-radius: 35px;
+  }
+  
+.Logo {
+ 
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 2%;
+    height: 6%;
+    align-items: left;
+			display: flex;
+    
+		}
+  
+
+</style>
+<header>
+   <nav>
+        <a class="logo" href="Ww2.html">ceu</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="Ww2.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Curiosidades.html">Curiosidades</a></li>
+          <li><a href="Contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+</header>
+<body>
+   <script src="JAVA/mobile-navbar.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+    });
+  });
+</script>
+    
+   <h1>A Segunda Guerra Mundial: Um Conflito Global que Moldou a História do Século XX
+</h1>
+   
+   <p>A Segunda Guerra Mundial foi um conflito militar global entre as Potências do Eixo, lideradas pela Alemanha nazista, e as Potências Aliadas, lideradas pelos Estados Unidos, Reino Unido e União Soviética. <a class="destaque0">A guerra começou com a invasão da Polônia pela Alemanha em setembro de 1939 e se espalhou para a Europa, África, Ásia e Oceano Pacífico.</a></p>
+
+<p>Foi caracterizada por batalhas sangrentas em <a class="destaque" href="ArmasT.html">terra</a>, <a class="destaque" href="ArmasM.html">mar</a> e <a class="destaque" href="ArmasA">ar</a>, além de crimes de guerra em grande escala, como o <a class="destaque" href="Holocausto.html">Holocausto</a>. 
+Os Aliados gradualmente ganharam vantagem em várias frentes, com importantes batalhas em <a class="destaque" href="StalinGrado.html">Stalingradoo</a>, <a class="destaque" href="Elalamein.html">El Alamein</a> e <a class="destaque" href="Normandia.html">Normandia</a>. <a class="destaque0">A guerra finalmente terminou em 2 de setembro de 1945, quando o Japão se rendeu após os bombardeios atômicos de</a> <a class="destaque" href="HN.html">Hiroshimaa e Nagasaki</a>.</p>
+<div>
+<div class="elemento-pai">
+   <img src="Img/geral/Hiroshima.jpg" alt="Hiroshima">
+</div>
+
+<p style="font-size: 20px; display: inline-block; color: #3e77b6;; ">A Segunda Guerra Mundial foi um dos conflitos mais mortais da história, com um estimado de 70 a 85 milhões de mortes, incluindo civis e militares. O conflito teve um impacto significativo nas relações internacionais, resultando na criação da Organização das Nações Unidas e na Guerra Fria entre as superpotências dos Estados Unidos e União Soviética.</p>
+
+</p>
+
+<h1>Três fases da Segunda Guerra Mundial: uma breve descrição dos eventos mais marcantes</h1>
+
+<div class="slider">
+    <img src="Img/geral/1fase.jpg">
+    <img src="Img/geral/2fase.jpg">
+    <img src="Img/geral/3fase.jpg">
+</div>
+
+<h3>Fase de Expansão (1939-1941)</h3>
+
+<p><a class="destaque0">A fase de expansão começou em setembro de 1939</a>, quando a Alemanha, liderada por <a href="AH.html"><span class="destaque">Adolf Hitler</span></a>, invadiu a Polônia. O Reino Unido e a França declararam guerra à Alemanha, mas foram incapazes de impedir a expansão do poder alemão pela Europa Ocidental. Em maio de 1940, a Alemanha invadiu a Dinamarca, a Noruega, a Bélgica, a Holanda e a França. Em junho de 1941, <a class="destaque0">a Alemanha invadiu a União Soviética, rompendo o Pacto de Não-Agressão que havia sido assinado entre os dois países em 1939</a>. A fase de expansão <a class="destaque0">terminou em dezembro de 1941, quando o Japão atacou a base naval americana de Pearl Harbor, no Havaí, levando os Estados Unidos a entrar na guerra.</a></p>
+
+<h3>Fase de Retorno (1942-1943)</h3>
+
+<p><a class="destaque0">A fase de retorno começou em 1942, quando os Aliados começaram a recuperar o terreno perdido para as forças do Eixo.</a> As batalhas decisivas dessa fase foram a Batalha de <a class="destaque" href="StalinGrado.html">Stalingrado</a>, que ocorreu entre agosto de 1942 e fevereiro de 1943, e a Batalha de <a class="destaque" href="Elalamein.html">El Alamein</a>, que ocorreu em outubro e novembro de 1942, na África. <a class="destaque0">Em novembro de 1942, os Aliados lançaram a Operação Torch, invadindo a África do Norte. Em julho de 1943, os Aliados invadiram a Sicília e, em setembro de 1943, a Itália se rendeu aos Aliados.</a></p>
+  
+<h3>Fase de Conclusão (1944-1945)</h3>
+
+<p>A fase de conclusão começou em 1944, quando os Aliados lançaram a Operação Overlord, a invasão da Normandia. Em agosto de 1944, os Aliados libertaram Paris. A fase de conclusão também incluiu a Batalha das Ardenas, que ocorreu em dezembro de 1944, e a Conferência de Yalta, em fevereiro de 1945. Em abril de 1945, os Aliados capturaram Berlim e, em maio de 1945, a Alemanha se rendeu.<a class="destaque0"> A Segunda Guerra Mundial terminou em agosto de 1945, com a rendição do Japão, depois dos bombardeios atômicos de Hiroshima e Nagasaki pelos Estados Unidos.</p>
+</a> 
+
+<h2>Origens e Desencadeamento da Segunda Guerra Mundial: Uma Análise das Causas e Eventos que Levaram ao Conflito Global
+   </h2>
+
+<p>                                                        A Segunda Guerra Mundial foi causada por uma  combinação.                                               de fatores, <a class="destaque0">incluindo o tratado de Versalhes, que impôs duras condições à Alemanha após a Primeira Guerra Mundial, a ascensão do nazismo liderado por</a> <a href="AH.html"><span class="destaque">Adolf Hitler</span></a> na Alemanha, a anexação da Áustria e da Tchecoslováquia pela Alemanha, a política de apaziguamento adotada pelos líderes ocidentais, a assinatura do pacto Molotov-Ribbentrop entre a Alemanha nazista e a União Soviética, e o desencadeamento da guerra na Europa com a invasão da Polônia pela Alemanha em 1939.
+
+<h2>As Profundas Consequências da Segunda Guerra Mundial: Uma Transformação Global que Afetou a Política, a Economia e a Sociedade
+</h2>
+
+<h3>A Segunda Guerra Mundial teve muitas consequências significativas em todo o mundo. Aqui estão algumas das principais consequências:</h3>
+
+<div class="is">
+<p>•<mark>Milhões de mortes e destruição de cidades e infraestrutura:</mark> A guerra resultou em mais de 60 milhões de mortes em todo o mundo, incluindo a maioria de civis, e na destruição de cidades e infraestrutura em muitas regiões.</p>
+
+<p>•<mark>Ascensão dos Estados Unidos e da União Soviética como superpotências: </mark>A vitória dos Aliados na Segunda Guerra Mundial deixou os Estados Unidos e a União Soviética como as duas principais potências mundiais, estabelecendo a Guerra Fria.</p>
+
+<p>•<mark>Criação da Organização das Nações Unidas (ONU): </mark>A Segunda Guerra Mundial levou à criação da ONU em 1945, com o objetivo de manter a paz e a segurança internacionais.</p>
+
+<p>•<mark>Fim do colonialismo europeu: </mark>A guerra enfraqueceu as potências coloniais europeias, permitindo que as colônias ganhassem independência.</p>
+
+<p>•<mark>Crescimento da economia e indústria: </mark>A guerra estimulou a economia e a indústria em muitos países, levando a um período de crescimento econômico após a guerra.</p>
+
+<p>•<mark>Estabelecimento do Tribunal de Nuremberg: </mark>O Tribunal de Nuremberg foi criado para julgar os líderes nazistas por crimes de guerra e contra a humanidade.</p>
+
+<p>•<mark>Desenvolvimento de armas nucleares: </mark>A Segunda Guerra Mundial resultou no desenvolvimento de armas nucleares, o que mudou a forma como as nações se envolvem em conflitos.</p>
+</div>
+<h3>Essas são apenas algumas das muitas consequências da Segunda Guerra Mundial, que continuaram a moldar a história global nas décadas seguintes.</h3>
+</body>
+<footer>
+    &copy; 2023 Meu Site. Todos os direitos reservados.
+</footer>
+</html>
+
+

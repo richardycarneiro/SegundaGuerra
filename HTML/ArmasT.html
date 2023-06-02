@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+a:hover {
+   opacity: 0.7;
+}
+
+.logo {
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 0px;  
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: "EB Garamond", Arial, sans-serif;
+   background-image: url("Img/Fundos/nowar2.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 170px;
+}
+
+@media (min-width: 999px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-list li {
+        padding: 20px;
+    }
+}
+
+ul a {
+   font-size: 25px;
+}
+
+.nav-list {
+   list-style: none;
+}
+
+.mobile-menu {
+   display: none;
+   cursor: pointer;
+}
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+   transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+    display: inline-block;
+  }
+  .nav-list {
+    
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+body {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-family: "Roboto Slab", Arial, sans-serif;    
+}
+
+.destaque {
+    color: #cb7169;
+    font-family: "Roboto Slab", Arial, sans-serif;
+    
+}
+
+.destaque2 {
+    color: #3e77b6;
+    font-family: "Roboto Slab", Arial, sans-serif;
+}
+
+mark {   
+    background-color: #e1e1e1;
+    color: black;
+}
+
+
+.Espaço {
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: "EB Garamond", Arial, sans-serif;
+    }
+    
+
+.txt {
+    text-align: justify;
+    margin: 15px;
+    display: inline-block;
+}
+
+h1 {
+    text-align: left;
+    display: inline-block;
+    color: #bb6162;
+    font-family: "EB Garamond", Arial, sans-serif;
+    font-weight: normal;
+}
+
+.elemento-pai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.elemento-pai img {
+  max-width: 93%;
+  max-height: 93%;
+  border: 3px solid #000;
+  border-radius: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.azul{
+    color: #3e77b6;
+    font-size: 25px;
+}
+
+ </style>
+		<link rel="stylesheet" href="CSS/reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<title>Armas Terrestres</title>
+</head>
+<header> 
+   <nav>
+        <a class="logo" href="Ww2.html">ceu</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="Ww2.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Curiosidades.html">Curiosidades</a></li>
+          <li><a href="Contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+</header>
+<body>
+    <script src="JAVA/mobile-navbar.js"></script>
+
+ 
+<h1>Armas Terrestres na Segunda Guerra Mundial: Um Olhar Detalhado sobre as Principais Armas de Combate Utilizadas.</h1>
+
+<div class="txt">
+<p>A Segunda Guerra Mundial foi um conflito armado que ocorreu entre 1939 e 1945, envolvendo diversas nações ao redor do mundo. Foi um dos conflitos mais mortais da história, e as armas terrestres desempenharam um papel fundamental na luta por terra durante o conflito.</p>
+<p>As armas terrestres utilizadas na Segunda Guerra Mundial foram diversas e abrangiam uma ampla gama de categorias. Entre as principais armas terrestres utilizadas na guerra estavam os <a class="destaque">rifles de ferrolho</a>, que eram amplamente utilizados pelos soldados de infantaria. Esses rifles de repetição de ação manual, como o <a class="destaque">Mosin-Nagant soviético, o Lee-Enfield britânico e o Springfield M1903 americano</a>, eram usados para atirar em alvos a médias e longas distâncias.</p>
+<p><a class="destaque2">As metralhadoras leves e pesadas</a> também foram amplamente utilizadas na Segunda Guerra Mundial. <a class="destaque">Metralhadoras como a MG42 alemã, a Browning M1919 americana e a Vickers britânica</a> eram usadas para fornecer fogo de supressão e suporte de fogo em combates terrestres.</p>
+<p><a class="destaque2">A artilharia</a> foi outro componente importante nas batalhas terrestres da Segunda Guerra Mundial. Armas de artilharia de diversos calibres, como obuses e canhões de campo, eram usadas para bombardear posições inimigas, fornecendo apoio de fogo às tropas terrestres e atacando alvos inimigos a longa distância.</p>
+<p><a class="destaque2">Os tanques</a> também desempenharam um papel crucial na guerra terrestre. Tanques de diferentes tipos, <a class="destaque">como o Tiger e o Panther alemães, o Sherman americano e o T-34 soviético</a>, eram usados para a infantaria de apoio, para romper linhas inimigas e para combate direto contra outros tanques.</p>
+<p>Além disso, outras armas terrestres incluíam <a class="destaque">lançadores de foguetes, granadas e explosivos, armas antitanque, armas antiaéreas, metralhadoras pesadas de calibre .50 e pistolas e revólveres.</a> Essas armas eram usadas em diversas situações e cumpriram uma variedade de funções, desde combate direto até apoio de fogo, defesa contra veículos blindados e aeronaves inimigas, e combate em áreas urbanas.</p>
+</div>
+<h1>Armas utilizadas durante a Segunda Guerra Mundial incluem:</h1>
+<div class="txt">
+<p><a class="azul">Mosin-Nagant 🇷🇺:</a> Um rifle de ferrolho calibre 7,62 mm, amplamente utilizado pelo Exército Vermelho soviético. Foi a principal arma de infantaria soviética durante a guerra.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/mosin-nagant.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">Karabiner 98k 🇩🇪:</a> Um rifle de ferrolho calibre 7,92 mm, usado pelas forças alemãs. Era uma arma confiável e de alta precisão, utilizada tanto por soldados quanto por atiradores de elite.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/kar98.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">"M1 Garand 🇺🇸:</a>Um rifle semiautomático calibre .30-06, utilizado pelas forças americanas. Foi o primeiro rifle semiautomático a ser amplamente utilizado pelo exército dos Estados Unidos.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/M1.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">MG42 🇩🇪:</a> Uma metralhadora de calibre 7,92 mm, conhecida por sua alta cadência de tiro e eficácia em combate. Foi amplamente utilizada pelas forças alemãs como arma de apoio à infantaria.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/MG.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">Panzer IV 🇩🇪:</a> Um tanque médio utilizado pelas forças alemãs, com armamento principal de um canhão de 75 mm. Foi um dos tanques mais comuns e amplamente utilizados pela Alemanha durante a guerra.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/PanzerIV.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">Sherman M4 🇺🇲:</a> Um tanque médio utilizado pelas forças americanas, com armamento principal de um canhão de 75 mm ou 76 mm. Foi o tanque mais amplamente utilizado pelos Estados Unidos e seus aliados durante a guerra.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/Sherman.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">Sturmgewehr 44 🇩🇪:</a> Um fuzil de assalto calibre 7,92 mm, considerado o precursor dos modernos fuzis de assalto. Foi utilizado pelas forças alemãs como uma arma de infantaria de alto poder de fogo.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/Sturmgewehr.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">PIAT 🇬🇧:</a> Um lançador de projéteis antitanque, utilizado pelas forças britânicas. Era uma arma portátil projetada para destruir tanques e outros veículos blindados.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/PIAT.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">Bazooka 🇺🇲:</a> Um lançador de foguetes antitanque portátil, utilizado pelas forças americanas. Foi uma das primeiras armas antitanque portáteis e foi amplamente utilizada pelas forças aliadas.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/bazooka.jpg" alt="Armas Terrestres">
+</div>
+
+<p><a class="azul">Artilharia de campanha (várias nações):</a> Várias peças de artilharia foram utilizadas durante a Segunda Guerra Mundial, incluindo o <a class="destaque">obus alemão 10,5 cm leFH 18, o obus soviético 76 mm M1942, o obus americano M2 de 105 mm,</a> entre outros. A artilharia desempenhou um papel crucial na guerra, fornecendo apoio de fogo às tropas em terra.</p>
+
+<div class="elemento-pai">
+   <img src="Img/Armas/obus.jpg" alt="Armas Terrestres">
+</div>
+
+</div>
+
+</body>
+<footer>
+    &copy; 2023 Meu Site. Todos os direitos reservados.
+</footer>
+</html>

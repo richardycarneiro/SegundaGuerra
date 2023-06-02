@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+   
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+a:hover {
+   opacity: 0.7;
+}
+
+.logo {
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 0px;  
+}
+
+@media (min-width: 999px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-list li {
+        padding: 20px;
+    }
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: "EB Garamond", Arial, sans-serif;
+   background-image: url("Img/Fundos/nowar3.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 170px;
+}
+
+ul a {
+   font-size: 25px;
+}
+
+.nav-list {
+   list-style: none;
+}
+
+.mobile-menu {
+   display: none;
+   cursor: pointer;
+}
+
+.mobile-menu div {
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+   transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+    display: inline-block;
+  }
+  .nav-list {
+    
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+body {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-family: "Roboto Slab", Arial, sans-serif;
+    
+}
+
+.destaque {
+    color: #871c17;
+    font-family: "Roboto Slab", Arial, sans-serif;
+    
+}
+
+mark {   
+    background-color: #e1e1e1;
+    color: black;
+}
+
+
+.Espaço {
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: "EB Garamond", Arial, sans-serif;
+    }
+
+figure {
+  position: relative;
+  max-width: 100%;
+}
+
+figurecaption {
+    font-size: 15px;
+    font-family: "EB Garamond", Arial, sans-serif;
+}
+
+.txtpt1 p {
+    text-align: justify;
+    margin: 15px;
+}
+
+.txtpt2 p {
+    text-align: left;
+    margin: 15px;
+}
+
+h1, h2 {
+    text-align: left;
+    color: #bb6162;
+    font-family: "EB Garamond", Arial, sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+
+    font-family: "EB Garamond", Arial, sans-serif;
+    font-weight: normal;
+    margin: 24px;
+    color: #3e77b6;
+    text-align: justify;
+}
+
+.elemento-pai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.elemento-pai img {
+  max-width: 93%;
+  max-height: 93%;
+  border: 3px solid #000;
+  border-radius: 35px;
+  margin-bottom: 20px;
+}
+
+ </style>
+		<link rel="stylesheet" href="CSS/reset.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<title>Adolf Hitler</title>
+</head>
+<header> 
+   <nav>
+        <a class="logo" href="Ww2.html">ceu</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="Ww2.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Curiosidades.html">Curiosidades</a></li>
+          <li><a href="Contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+</header>
+<body>
+    <script src="JAVA/mobile-navbar.js"></script>
+    
+    <h2>Hitler, O Führer do Fracasso: Como um homem com um bigode estranho e ideias ainda mais estranhas falhou miseravelmente em sua busca por domínio mundial (e moda questionável!)</h2>
+   <div class="txtpt1">
+   <p>Adolf Hitler foi um político alemão que nasceu em 1889 e faleceu em 1945. Ele foi o líder do Partido Nazista e se tornou o chanceler da Alemanha em 1933, e posteriormente se autodenominou "Führer" (líder) em 1934, estabelecendo uma ditadura na Alemanha nazista. Durante seu governo, Hitler implementou políticas racistas e anti-semitas, promovendo a superioridade da raça ariana e perseguindo grupos considerados "indesejáveis", como judeus, ciganos, homossexuais, pessoas com deficiência e outros.</p>
+
+<p>Hitler é mais conhecido por seu papel central na Segunda Guerra Mundial (1939-1945), na qual ele liderou a Alemanha em uma campanha de conquista de territórios, buscando a dominação da Europa. Seus atos brutais resultaram em inúmeros crimes de guerra, incluindo o Holocausto, um genocídio que resultou na morte de milhões de judeus e outras minorias. No entanto, a Alemanha nazista foi derrotada pelos Aliados em 1945. Hitler cometeu suicídio em seu bunker em Berlim em abril de 1945, pondo fim à sua liderança e legado infame como um dos líderes mais notórios da história moderna.</p>
+</div>
+   <div class="elemento-pai">
+  <img src="Img/geral/AH.jpg" alt="Adolf Hitler">
+   </div>
+ 
+   
+ <h2 style="font-weight: normal;">As ideias de Adolf Hitler, como líder do Partido Nazista, eram caracterizadas por uma ideologia extremista e totalitária conhecida como nazismo. Alguns dos principais princípios e crenças do nazismo incluíam:</h2>
+ 
+<div class="txtpt2">
+    
+<p>• <mark>Superioridade racial:</mark> Hitler acreditava na superioridade da "raça ariana", uma suposta raça alemã "pura", como sendo superior a outras raças, e defendia a promoção da purificação racial e a expansão do território alemão para criar um espaço vital ("Lebensraum") para essa suposta raça superior.</p>
+
+<p>• <mark>Antissemitismo:</mark> Hitler nutria um intenso ódio aos judeus e promovia políticas anti-semitas, considerando-os responsáveis por muitos dos problemas da Alemanha e do mundo. Isso levou ao Holocausto, um genocídio sistemático que resultou na perseguição, deportação e assassinato de seis milhões de judeus durante o regime nazista.</p>
+
+<p>• <mark>Nacionalismo extremo:</mark> Hitler promovia um nacionalismo alemão radical, enfatizando a supremacia do Estado alemão sobre os interesses individuais e suprimindo a dissidência política. Ele buscava criar um Estado autoritário e centralizado, com ele mesmo como líder supremo.</p>
+
+<p>• <mark>Anti-comunismo:</mark> Hitler era fortemente contra o comunismo e via os comunistas como inimigos do Estado alemão. Ele perseguiu e reprimiu os partidos políticos comunistas e outras formas de oposição política.</p>
+
+<p>• <mark>Militarismo expansionista:</mark> Hitler buscava expandir o território alemão através da conquista militar, visando a criação de um vasto império europeu liderado pela Alemanha. Isso levou à ocupação de outros países e à eclosão da Segunda Guerra Mundial.</p>
+
+<p>• <mark>Autocracia e culto à personalidade:</mark> Hitler defendia uma forma de governo autocrática, em que o líder absoluto tinha poderes ilimitados e controlava todos os aspectos da sociedade. Ele também promovia um culto à sua própria personalidade, buscando adoração e lealdade cega dos seguidores.</p>
+
+<h3>É importante observar que as ideias de Hitler são consideradas extremamente prejudiciais e moralmente condenáveis. O nazismo resultou em inúmeras atrocidades e violações dos direitos humanos, causando sofrimento e morte em larga escala durante o período do regime nazista na Alemanha.</h3>
+</div>
+</body>
+<footer>
+    &copy; 2023 CEU. Todos os direitos reservados.
+</footer>
+</html>
